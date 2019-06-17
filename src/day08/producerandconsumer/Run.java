@@ -1,4 +1,4 @@
-package day08.producerandcostomer;
+package day08.producerandconsumer;
 
 /**
  * @author XieKong
@@ -9,10 +9,10 @@ public class Run {
         Object lock = new Object();
         ValueObject object = new ValueObject();
         Producer producer = new Producer(lock, object);
-        Costomer costomer = new Costomer(lock, object);
+        Consumer consumer = new Consumer(lock, object);
 
         ThreadP p1 = new ThreadP(producer);
-        ThreadC c1 = new ThreadC(costomer);
+        ThreadC c1 = new ThreadC(consumer);
 
         p1.start();
         c1.start();

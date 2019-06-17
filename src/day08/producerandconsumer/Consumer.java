@@ -1,14 +1,14 @@
-package day08.producerandcostomer;
+package day08.producerandconsumer;
 
 /**
  * @author XieKong
  * @date 2019/6/17 11:21
  */
-public class Costomer {
+public class Consumer {
     private Object lock;
     private ValueObject valueObject;
 
-    public Costomer(Object lock, ValueObject valueObject) {
+    public Consumer(Object lock, ValueObject valueObject) {
         this.lock = lock;
         this.valueObject = valueObject;
     }

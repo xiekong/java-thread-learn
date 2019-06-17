@@ -1,4 +1,4 @@
-package day08.producerandcostomer;
+package day08.producerandconsumer;
 
 /**
  * @author XieKong

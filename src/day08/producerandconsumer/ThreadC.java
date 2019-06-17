@@ -1,20 +1,20 @@
-package day08.producerandcostomer;
+package day08.producerandconsumer;
 
 /**
  * @author XieKong
  * @date 2019/6/17 11:24
  */
 public class ThreadC extends Thread {
-    private Costomer costomer;
+    private Consumer consumer;
 
-    public ThreadC(Costomer costomer) {
-        this.costomer = costomer;
+    public ThreadC(Consumer consumer) {
+        this.consumer = consumer;
     }
 
     @Override
     public void run() {
         while (true) {
-            costomer.getValue();
+            consumer.getValue();
         }
     }
 }
